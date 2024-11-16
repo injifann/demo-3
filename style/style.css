@@ -1,0 +1,136 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;;
+}
+.container{
+  display: grid;
+  grid-template-rows:100px 400px 200px;
+  place-items:center;
+  row-gap:60px;
+}
+nav {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  display:grid;
+}
+nav ul 
+{
+  display: grid;
+  grid-template-columns:repeat(5,1fr);
+}
+nav .logo
+{
+align-self: flex-start;
+}
+ul li{
+  list-style: none;
+}
+li a{
+  text-decoration: none;
+  color: hsl(233, 8%, 79%);
+}
+.inner-container{
+  width: 85%;
+  display: grid;
+}
+.inner-one{
+grid-template-columns: 2fr 1fr;
+column-gap: 10px;
+}
+.inner-container .first-column{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.inner-one .first-column div
+{
+  display: grid;;
+  grid-template-rows: 2fr 2fr;
+}
+.first-column div button{
+  width: 150px;
+  height: 40px;
+  align-self: self-end;
+  border: none;
+  background-color: hsl(5, 85%, 63%)  ;
+  color: #ffffff;
+}
+.inner-one .first-column img{
+  width: 100%;
+  height: auto;
+  grid-column: span 2;
+}
+.first-column p{
+  margin: 15px 0;
+  color: hsl(233, 8%, 79%);
+}
+.first-column h1{
+  text-transform: capitalize;
+}
+.inner-one .second-column{
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  display: grid;
+  grid-template-rows:0.5fr 1fr 1fr 1fr;
+  align-items: center;
+  padding-inline: 20px;
+}
+.second-column h1{
+  color:hsl(35, 77%, 62%);
+  text-transform: capitalize;
+}
+.second-column h2
+{
+color:hsl(0, 0%, 100%);
+text-transform: capitalize;
+}
+.second-column p
+{
+  color: hsl(236, 13%, 42%);
+  margin-top: 10px;
+}
+.second-column .border
+{
+  border-bottom: 1px solid hsl(0, 0%, 100%);
+  border-top: 1px solid hsl(0, 0%, 100%);
+   padding: 20px 0;
+}
+.inner-two{
+  grid-template-columns:repeat(3,1fr);
+}
+.trends img
+{
+  width: 130px;
+  height: 150px;
+}
+.trends
+{ 
+  display: grid;
+  grid-template-columns: 135px 1fr;
+}
+.trends div{
+  display:grid;
+  grid-template-rows:50px 50px 50px;
+  column-gap: 10px;
+}
+.trends div p,.trends div h3
+{
+  padding-left: 10px;
+}
+.trends div h3
+{
+  text-transform: capitalize;
+}
+.trends div span,.trends div p
+{
+  color:hsl(233, 8%, 79%);
+}
+.trends div p
+{
+  line-height: 30px;
+}
+.trends div span{
+  font-weight: bold;
+  font-size: 30px;
+  padding-inline: 10px;
+}
